@@ -1,0 +1,456 @@
+/*===========================
+ Author:Mohammad Nurilam Mridha
+ ===========================*/
+ /*======Common Section Start=====*/
+ *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+border: 0;
+outline: 0;
+ }
+ body{
+
+   font-family: 'Open Sans', sans-serif;
+ }
+
+
+  /*======Common Section End=====*/
+
+
+  /*======Header Section Start=====*/
+    header{
+      padding-top: 20px;
+      overflow: hidden;
+      padding-right: 20px;
+    }
+    header ul{
+      list-style-type: none;
+      display: block;
+      float: right;
+    }
+    header ul li{
+      display: inline-block;
+      float: left;
+      margin-left: 10px;
+    }
+    header ul li a{
+      text-decoration: none;
+      font-size: 15px;
+      color: #000;
+      padding: 5px 10px;
+      text-align: center;
+    }
+        header ul li a:hover{
+          color: #888;
+          text-decoration: underline;
+        }
+    .google-apps{
+    }
+    .google-apps label{}
+    .google-apps label:hover i{
+      color: #000;
+    }
+    .google-apps label i{
+      color: #888;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+    .google-apps input{
+      display: none;
+    }
+ .apps{
+   position: absolute;
+   top: 55px;
+   right: 20px;
+   width: 350px;
+   height: 350px;
+   overflow-y: scroll;
+   padding: 10px;
+   display: none;
+   background: #fff;
+   border: 1px solid #888;
+   box-shadow: 5px 4px  10px rgba(0, 0, 0, 0.1);
+   z-index: 999;
+   box-shadow: 10px 5px 5px rgba(0,0,0,.4);
+  }
+  #apps:checked~.apps{
+    display: block;
+  }
+    .apps .apps-list{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #888;
+  }
+
+    .apps-list-item{
+      padding: 15px;
+      align-self: center;
+    }
+    .apps-list-item img{
+     width: 40px;
+     height: 35px;
+     display: block;
+margin-left: auto;
+margin-right: auto;
+    }
+    .apps-list-item p{
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+    }
+    .apps>p{
+      display: inline-block;
+      margin-top: 30px;
+      margin-left: 60px;
+      font-size: 18px;
+      text-align: center;
+      border: 1px solid #888;
+      color: blue;
+      background: #f2f2f2;
+      border-radius: 10px;
+      padding: 5px 20px;
+      cursor: pointer;
+    }
+    .google-account{}
+    .google-account label{}
+    .google-account label img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-top: -7px;
+    }
+    .google-account input{
+      display: none;
+    }
+    .account{
+      position: absolute;
+      width: 400px;
+      height: 350px;
+      overflow-y: scroll;
+      top: 55px;
+      right: 20px;
+      border: 1px solid #888;
+      border-radius: 10px;
+      box-shadow: 10px 5px 5px rgba(0,0,0,.4);
+       display: none;
+       background: #fff;
+       z-index: 999;
+      }
+      #account:checked~.account{
+        display: block;
+      }
+    .account-item{
+     padding: 25px 10px;
+    }
+    .account-item img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .account-item h2{
+      font-weight: 800;
+      font-size: 18px;
+      text-align: center;
+    }
+    .account-item p{
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+    .account-item h4{
+      display: block;
+   font-weight: 400;
+   font-size: 18px;
+   text-align: center;
+   border: 1px solid #888;
+   border-radius: 10px;
+   padding: 5px 5px;
+   margin-top: 20px;
+   background: #f2f2f2;
+    }
+    .app-profile{
+      border-top: 1px solid #888;
+      border-bottom: 1px solid #888;
+      padding: 20px 0;
+    }
+    .app-profile i{
+      font-size: 18px;
+      color: #888;
+      padding-left: 30px;
+    }
+    .app-profile span{
+      color: #888;
+      font-size: 15px;
+      font-weight: 800;
+      margin-left: 20px;
+    }
+    .sign-out{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+      font-weight: 600;
+      background: #f2f2f2;
+      border: 1px solid #888;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 5px 15px;
+    }
+    .policy{
+      border-top: 1px solid #888;
+    }
+    .policy p{
+      font-size: 14px;
+      text-align: center;
+      padding: 10px 0;
+    }
+  /*======Header Section End=====*/
+  /*======Contant Section Start=====*/
+  .contant{
+    position: relative;
+  }
+  .contant-logo{
+  }
+  .contant-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 75px;
+  }
+  .input{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .input-border{
+    border: 1px solid #888;
+    padding:10px 20px;
+    border-radius: 20px;
+  }
+  .input-border:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .input i{
+    color: #888;
+    font-size: 18px;
+  }
+
+  .tool{
+position: absolute;
+top: 139px;
+left: 705px;
+display: none;
+  }
+  .tooltip{
+border: 1px solid black;
+background: #000;
+color: #fff;
+font-weight: 600;
+font-size: 12px;
+display: inline-block;
+padding: 5px 10px;
+position: relative;
+  }
+  .arrow{
+    border:1px solid black;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -8px;
+    left: 44px;
+    background: black;
+    transform: rotate(45deg);
+  }
+  .fa-microphone:hover~.tool{
+    display: block;
+  }
+  .input input{
+    width: 400px;
+    font-size: 15px;
+    padding: 2px 10px;
+  }
+    .search-history{
+      background: #fff;
+      position: absolute;
+      width: 480px;
+     top: 124px;
+     left: 298px;
+     border-right: 1px solid #888;
+     border-bottom: 1px solid #888;
+     border-left: 1px solid #888;
+     border-radius: 0 0 20px 20px;
+     padding:10px 20px;
+     display: none;
+     box-shadow: 10px 5px 5px rgba(0,0,0,.4);
+    }
+    .input input:focus~.search-history{
+      display: block;
+    }
+    .search-history table{
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .search-history table tr{
+      padding: 15px 0;
+    }
+    .search-history table tr:hover{
+      background: rgba(0, 0, 0, 0.1);
+    }
+    .search-history table tr td:nth-child(1){
+      width: 5%;
+    }
+    .search-history table tr td:nth-child(2){
+      width: auto;
+      color: blue;
+      padding-left: 10px;
+    }
+    .search-history table tr td:nth-child(3){
+      width: 15%;
+      color: #888;
+      font-size: 14px;
+
+    }
+
+        .search-history table tr td:nth-child(3):hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+    .search-history table tr td i{
+      font-size: 18px;
+      color: #888;
+    }
+
+      .contant-nav{
+        margin-top: 30px;
+      }
+      .contant-nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      .contant-nav ul li{
+        border-radius: 5px;
+        background: #f2f2f2;
+        margin-left: 20px;
+        padding: 5px 10px;
+        color: #888;
+        font-size: 15px;
+      }
+      .contant-nav ul li:hover{
+        border: 1px solid #888;
+        cursor: pointer;
+
+      }
+      .text{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .text p{
+        font-size: 13px;
+        color: #888
+      }
+      .text p a{
+        text-decoration: none;
+        margin-left: 10px;
+      }
+        .text p a:hover{
+          text-decoration: underline;
+        }
+  /*======Contant Section End=====*/
+  /*======Footer Section Start=====*/
+  footer{
+    background:#f2f2f2;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+.footer-top{
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  padding:10px 25px;
+}
+.footer-top p{
+  font-size: 14px;
+  color: #888;
+}
+.footer-bottom{
+  padding:10px 25px;
+  overflow: hidden;
+  font-size: 14px;
+}
+  .left{
+    display: inline-block;
+    float: left;
+  }
+  .left ul{
+    list-style-type: none;
+  }
+  .left ul li{
+    display: inline-block;
+    float: left;
+    margin-right:15px;
+  }
+  .left ul li a{
+    text-decoration: none;
+    color: #888;
+  }
+  .right{
+    display: inline-block;
+    float: right;
+  }
+  .right input{
+    display: none;
+  }
+  .right ul{
+    list-style-type: none;
+  }
+  .right>ul>li{
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+  }
+    .right ul li a{
+      text-decoration: none;
+      color: #888;
+    }
+  .right ul li label{
+    color: #888;
+  }
+    .google-settings{
+    }
+    .google-settings label{}
+    .google-settings input{}
+      .settings{
+        position: fixed;
+        right: 26px;
+        bottom: 28px;
+        border: 1px solid #888;
+        padding: 10px 20px;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+        display: none;
+        background: #f2f2f2;
+        z-index: 999;
+      }
+      #settings:checked~.settings{
+ display: block;
+      }
+      .settings ul{
+        list-style-type: none;
+      }
+      .settings ul li{
+        margin: 25px 0;
+      }
+
+
+  /*======Footer Section End=====*/
